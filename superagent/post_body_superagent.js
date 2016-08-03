@@ -5,7 +5,7 @@ var request = require('superagent');
 request
     .post('localhost:3000/codeToBarcode')
     .type('form')         //以表单的形式发送
-    .send({'code': '12a5'})    //相当于一个请求
+    .send({'code': '12345'})    //相当于一个请求
     //.set('X-API-Key', 'foobar')
     //.set('Accept', 'application/json')
     .end(function (err,res) {
